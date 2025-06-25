@@ -23,12 +23,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navigate to={'/countries'} />} />
         <Route path="/" element={<RootLayout/>}>
 
-          <Route path="/countries">
+          <Route path="/">
             <Route index element={<Main setSearch={setSearch} search={search} />} />
-            <Route path=":region" element={<Main  setSearch={setSearch} search={search} />} />
+            <Route path="/:region" element={<Main  setSearch={setSearch} search={search} />} />
           </Route>
           
           <Route path="/details">

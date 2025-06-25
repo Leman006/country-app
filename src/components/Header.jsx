@@ -48,7 +48,7 @@ function Header() {
                         {
                             regData.map((item, i) =>
                                 <li key={i}  className="flex">
-                                <NavLink to={`/countries/${item}`}>
+                                <NavLink to={`/${item}`}>
                                     <p rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-">{item}</p>
                                 </NavLink>
                                 </li>
